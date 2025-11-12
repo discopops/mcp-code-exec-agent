@@ -1,0 +1,3 @@
+agency-swarm[fastapi]
+uvicorn
+nest_asyncio
