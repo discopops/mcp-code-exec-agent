@@ -23,10 +23,7 @@ RUN apt-get update && \
 
 COPY requirements.txt .
 RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt && \
-    pip uninstall -y agency-swarm && \
-    pip install --no-cache-dir "git+https://github.com/VRSEN/agency-swarm.git@main#egg=agency-swarm[fastapi]" && \
-    pip install --no-cache-dir "git+https://github.com/VRSEN/agency-swarm.git@main#egg=agency-swarm[jupyter]"
+    pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 CMD python -u main.py

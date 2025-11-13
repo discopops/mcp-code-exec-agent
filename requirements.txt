@@ -1,3 +1,4 @@
-agency-swarm[fastapi]
+agency-swarm[fastapi]>=1.4.0
+agency-swarm[jupyter]>=1.4.0
 uvicorn
 nest_asyncio
